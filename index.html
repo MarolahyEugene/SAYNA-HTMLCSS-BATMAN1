@@ -6,11 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Assets/styles.css">
-    <!-- <link rel="preconnect" href="Assets/font/Rajdhani-Light.ttf"> -->
-    <!-- <link rel="preconnect" href="Assets/font/Rajdhani-Regular.ttf">
-    <link rel="preconnect" href="Assets/font/Rajdhani-Medium.ttf"> -->
-    <!-- <link rel="preconnect" href="Assets/font/Rajdhani-SemiBold.ttf"> -->
-    <link rel="preconnect" href="Assets/font/Rajdhani-Bold.ttf">
     <title>BATMAN1</title>
 </head>
 
@@ -22,16 +17,18 @@
             <h1>HOME</h1>
         </div>
         <div class="content-1">
-            <p>Au nom de ses parents assassinés, Bruce Wayne mène une guerre éternelle contre les criminels de
-                Gotham City. Il est vengeur. Il est la nuit.</p>
-            <h2>Il est Batman.</h2>
+            <div>
+                <p>Au nom de ses parents assassinés, Bruce Wayne mène une guerre éternelle contre les criminels de
+                    Gotham City. Il est vengeur. Il est la nuit.</p>
+                <h2>Il est Batman.</h2>
+            </div>
             <button>Voir le héros</button>
             <button>LES ADVERSAIRES</button>
         </div>
     </div>
     <div class="bloc-2">
         <div class="content-2">
-            <span><img src="Assets/Logos/flèche_down_header.png" alt="flèche_down_header"></span>
+            <span id="fleche"><img src="Assets/Logos/flèche_down_header.png" alt="flèche_down_header"></span>
             <h1>BATMAN AU CINÉMA</h1>
             <p>
                 Le personnage de Batman est un super héros de l’univers de DC Comics. Il a été créé par le
@@ -44,42 +41,54 @@
             <div class="list-image">
                 <div class="image img1">
                     <img src="Assets/Illustrations/Bathome2.png" alt="">
-                    <span>Robert Pattinson (2022)</span>
+                    <span class="titre-image">Robert Pattinson</span>
+                    <span>(2022)</span>
                 </div>
                 <div class="image img2">
                     <img src="Assets/Illustrations/Bathome3.png" alt="">
-                    <span>Christian Bale (2006 2008 2012)</span>
+                    <span class="titre-image">Christian Bale</span>
+                    <span>(2006 2008 2012)</span>
                 </div>
                 <div class="image img3">
                     <img src="Assets/Illustrations/Bathome4.png" alt="">
-                    <span>Ben Affleck 20016- 2017/2020 2023)</span>
-                </div>
-            </div>
-            <div class="nemesis">
-                <i><img src="Assets/Illustrations/Bathome13.png" alt=""></i>
-                <h1>NÉMÉSIS</h1>
-            </div>
-            <p>Batman souhaite éradiquer la criminalité de Gotham. C’est pourquoi, il affrontera la plupart
-                du temps, des vilains sans capacités surnaturelles mais particulièrement violents ou
-                psychopathes. Avec son introduction dans la Justice League il aura l’occasion de se
-                mesurer à des antagonistes qui défient l’imagination et les lois de la physique. Parmi les
-                derniers ennemis emblématiques que nous avons pu voir au cinéma, on retrouve :</p>
-            <div class="list-image">
-                <div class="image img1">
-                    <img src="Assets/Illustrations/Bathome5.png" alt="">
-                    <span>The Riddler Paul Dano (2022)</span>
-                </div>
-                <div class="image img2">
-                    <img src="Assets/Illustrations/Bathome6.png" alt="">
-                    <span>Le Joker Heath Ledger (2008)</span>
-                </div>
-                <div class="image img3">
-                    <img src="Assets/Illustrations/Bathome7.png" alt="">
-                    <span>Darkseid Ray Porter (2022)</span>
+                    <span class="titre-image">Ben Affleck</span>
+                    <span>20016- 2017/2020 2023)</span>
                 </div>
             </div>
             <div class="desc">
-                <h1>Alliés</h1>
+                <div class="nemesis">
+                    <i><img src="Assets/Illustrations/Bathome13.png" alt=""></i>
+                    <h1>NÉMÉSIS</h1>
+                </div>
+                <p>Batman souhaite éradiquer la criminalité de Gotham. C’est pourquoi, il affrontera la plupart
+                    du temps, des vilains sans capacités surnaturelles mais particulièrement violents ou
+                    psychopathes. Avec son introduction dans la Justice League il aura l’occasion de se
+                    mesurer à des antagonistes qui défient l’imagination et les lois de la physique. Parmi les
+                    derniers ennemis emblématiques que nous avons pu voir au cinéma, on retrouve :
+                </p>
+            </div>
+            <div class="list-image">
+                <div class="image img1">
+                    <img src="Assets/Illustrations/Bathome5.png" alt="Bathome5">
+                    <span class="titre-image">The Riddler Paul Dano</span>
+                    <span>(2022)</span>
+                </div>
+                <div class="image img2">
+                    <img src="Assets/Illustrations/Bathome6.png" alt="Bathome6">
+                    <span class="titre-image">Le Joker Heath Ledger</span>
+                    <span>(2008)</span>
+                </div>
+                <div class="image img3">
+                    <img src="Assets/Illustrations/Bathome7.png" alt="Bathome7">
+                    <span class="titre-image">Darkseid Ray Porter</span>
+                    <span>(2022)</span>
+                </div>
+            </div>
+            <div class="desc">
+                <div class="alilies">
+                    <h1>Alliés</h1>
+                    <i><img src="Assets/Illustrations/Bathome12.png" alt=""></i>
+                </div>
                 <p>Alfred est le majordome des Wayne. A leur mort il s’occupe de l’éducation du jeune Bruce
                     avant de l’assister dans son rôle du Batman. Ce dernier rencontrera Catwoman dès le
                     premier numéro des aventures de l’homme-chauve souris en 1940. Tantôt ennemie tantôt
@@ -91,15 +100,18 @@
             <div class="list-image">
                 <div class="image img1">
                     <img src="Assets/Illustrations/Bathome9.png" alt="">
-                    <span>Alfred Pennyworth Michael Cain (2006 2008 2012)</span>
+                    <span class="titre-image">Alfred Pennyworth Michael Cain</span>
+                    <span>(2006 2008 2012)</span>
                 </div>
                 <div class="image img2">
                     <img src="Assets/Illustrations/Bathome8.png" alt="">
-                    <span>Catwoman Zoé Kravitz (2008)</span>
+                    <span class="titre-image">Catwoman Zoé Kravitz</span>
+                    <span>(2008)</span>
                 </div>
                 <div class="image img3">
                     <img src="Assets/Illustrations/Bathome10.png" alt="">
-                    <span>James Gordon (2014 2019)</span>
+                    <span class="titre-image">James Gordon</span>
+                    <span>(2014 2019)</span>
                 </div>
             </div>
             <div class="desc">
@@ -143,152 +155,6 @@
             </div>
         </div>
         <img src="Assets/Illustrations/Bathome_ba2.png" alt="">
-    </div>
-
-
-    <div class="bloc-5">
-
-        <br><br>
-        <table>
-            <tr>
-                <th rowspan="2">Animaux</th>
-            </tr>
-            <tr>
-                <th>Hippopotame</th>
-            </tr>
-            <tr>
-                <th>Cheval</th>
-                <td>Jument</td>
-            </tr>
-            <tr>
-                <td>Étalon</td>
-            </tr>
-            <tr>
-                <th>Crocodile</th>
-            </tr>
-            <tr>
-                <th>Poulet</th>
-                <td>Coq</td>
-            </tr>
-            <tr>
-                <td>Coq</td>
-            </tr>
-        </table>
-        <br>
-        <table style="background-color: rgba(216, 217, 218, 0.957)">
-            <caption>Liste des données</caption>
-            <colgroup>
-                <col style="background-color: rgba(64, 91, 101, 0.686)">
-                <col style="background-color: rgba(8, 50, 93, 0.412)">
-                <col style="background-color: rgba(64, 91, 101, 0.686)">
-            </colgroup>
-            <tr>
-                <th>Data 1</th>
-                <th>Data 2</th>
-                <th>Data 3</th>
-            </tr>
-            <tr>
-                <td>Calcutta</td>
-                <td>Orange</td>
-                <td>Orange</td>
-            </tr>
-            <tr>
-                <td>Robots</td>
-                <td>Robots</td>
-                <td>Jazz</td>
-            </tr>
-        </table>
-        <br><br>
-        <table id="table1" style="background-color: rgba(68, 110, 155, 0.769)">
-            <colgroup>
-                <col style="background-color: rgba(75, 49, 100, 0.554)">
-                <col style="background-color: rgba(8, 50, 93, 0.412)">
-                <col style="background-color: rgba(68, 49, 118, 0.546)">
-            </colgroup>
-            <tr>
-                <th>title1</th>
-                <th>title2</th>
-                <th>title3</th>
-            </tr>
-            <tr>
-                <td id="nested">
-                    <table id="table2">
-                        <colgroup>
-                            <col style="background-color: rgba(115, 12, 212, 0.719)">
-                            <col style="background-color: rgba(9, 99, 190, 0.873)">
-                            <col style="background-color: rgba(162, 14, 143, 0.749)">
-                        </colgroup>
-                        <tr>
-                            <td>cell1</td>
-                            <td>cell2</td>
-                            <td>cell3</td>
-                        </tr>
-                    </table>
-                </td>
-                <td>cell2</td>
-                <td>cell3</td>
-            </tr>
-            <tr>
-                <td>cell4</td>
-                <td>cell5</td>
-                <td>cell6</td>
-            </tr>
-        </table>
-        <br><br>
-        <table style="background-color: rgba(68, 110, 155, 0.769)">
-            <colgroup>
-                <col style="background-color: rgba(115, 12, 212, 0.719)">
-                <col style="background-color: rgba(9, 99, 190, 0.873)">
-                <col style="background-color: rgba(162, 14, 143, 0.749)">
-                <col style="background-color: rgba(9, 99, 190, 0.873)">
-                <col style="background-color: rgba(115, 12, 212, 0.719)">
-            </colgroup>
-
-
-            <thead>
-                <tr>
-                    <th id="purchase">Achats</th>
-                    <th id="location">Où&nbsp;?</th>
-                    <th id="date">Date</th>
-                    <th id="evaluation">Avis</th>
-                    <th id="cost">Coût (€)</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th id="haircut">Coupe de cheveux</th>
-                    <td headers="location haircut">Coiffeur</td>
-                    <td headers="date haircut">12/09</td>
-                    <td headers="evaluation haircut">Bonne idée</td>
-                    <td headers="cost haircut">30</td>
-                </tr>
-
-            </tbody>
-
-
-            <!-- <thead>
-                <tr>
-                    <th scope="col">Achats</th>
-                    <th scope="col">Ou&nbsp;?</th>
-                    <th scope="col">Date</th>
-                    <th scope="col">Avis</th>
-                    <th scope="col">Coût (€)</th>
-                </tr>
-                <tr>
-                    <th scope="row">Coupe de cheveux</th>
-                    <td>Coiffeur</td>
-                    <td>12/09</td>
-                    <td>Bonne idée</td>
-                    <td>30</td>
-                </tr>
-
-
-            </thead> -->
-
-
-        </table>
-        <br><br>
-
     </div>
 
 </body>

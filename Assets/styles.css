@@ -1,93 +1,212 @@
 /* @import url(‘../Assets/font/Rajdhani-Medium.ttf’); */
 
+
 @font-face {
-    font-family:
-        'Rajdhani-Medium',
-        'SpaceGrotesk-Bold',
-        'SpaceGrotesk-Regular',
-        'SpaceGrotesk-Medium';
-    src:
-        url(../Assets/font/Rajdhani/Rajdhani-Medium.ttf),
-        url(../Assets/font/Space_Grotesk/SpaceGrotesk-Bold.ttf),
-        url(../Assets/font/Space_Grotesk/SpaceGrotesk-Regular.ttf),
-        url(../Assets/font/Space_Grotesk/SpaceGrotesk-Medium.ttf);
+    font-family: 'Rajdhani-Medium';
+    src: url(../Assets/font/Rajdhani/Rajdhani-Medium.ttf);
 }
 
-body {
-    color: #FFFFFF;
-    margin: 0;
-    padding: 0;
-    font-family: 'SpaceGrotesk-Medium';
+@font-face {
+    font-family: 'SpaceGrotesk-Regular';
+    src: url(../Assets/font/Space_Grotesk/SpaceGrotesk-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'SpaceGrotesk-Bold';
+    src: url(../Assets/font/Space_Grotesk/SpaceGrotesk-Bold.ttf);
 }
 
 .bloc-1 {
     background-image: url('../Assets/Illustrations/Bathome1.png');
     background-size: 100%;
+    background-position: center;
     overflow: hidden;
+    font-family: 'SpaceGrotesk-Regular';
+}
+
+.bloc-3 {
+    background-image: url('../Assets/Illustrations/Bathome11.png');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    font-family: 'SpaceGrotesk-Regular';
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+
+}
+
+p {
+    font-size: 18px;
+    font-family: 'SpaceGrotesk-Regular';
+    font-weight: 200;
+}
+
+
+
+.header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 102px;
+    margin-right: 102px;
+    padding: 50px 102px 102px;
+    border: 2px solid #6460687e;
+    border-bottom: none;
+}
+
+.content-1 button {
+    /* margin-bottom: 102px; */
+}
+
+
+
+.content-1 {
+
+    border: 2px solid #6460687e;
+    margin-left: 102px;
+    margin-right: 102px;
+    padding: 102px 132px;
+    border-bottom: none;
+    text-align: center;
+
+}
+
+.content-1 div {
+
+    margin: 32px 102px;
+    padding: 12px 20px;
+}
+
+.content-1 div h2 {
+    margin: 30px;
+}
+
+button {
+    padding: 10px 40px;
+    margin: 0 20px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    border: none;
+    background: -webkit-linear-gradient(to right, rgb(237, 222, 191, 0.4), rgb(137, 0, 8, 0.6));
+    background: linear-gradient(to right, rgb(237, 222, 191, 0.4), rgb(137, 0, 8, 0.6));
+    cursor: pointer;
+}
+
+button:hover {
+    font-weight: 700;
 }
 
 .bloc-2 {
     background-color: black;
+    font-family: 'SpaceGrotesk-Regular';
 }
 
 .bloc-2 span {
     text-align: center;
 }
 
-.content-1 button {
-    margin-bottom: 40%;
-}
-
-.content-1 {
-    border: 2px solid #6c6b6f92;
-    margin-left: 102px;
-    margin-right: 102px;
-    padding: 0 102px;
-    border-bottom: none;
-    text-align: center;
-}
 
 .content-2 {
-    /* display: grid; */
     align-items: center;
-    border: 2px solid #6c6b6f92;
+    border: 2px solid #6460687e;
     margin-left: 102px;
     margin-right: 102px;
-    padding: 0 102px;
+    padding: 10px 80px;
     border-bottom: none;
     border-top: none;
+    /* background-color: rgba(197, 188, 180, 0.24); */
+}
+
+.content-2 span {
+    display: flex;
+    justify-content: center;
+}
+
+.content-2 span img {
+    margin: 20px 0;
+    /* align-items: center; */
+}
+
+h1 {
+    font-family: 'Rajdhani-Medium';
+    font-size: 36px;
+}
+
+h2 {
+    font-family: 'SpaceGrotesk-Regular';
+    font-size: 22px;
+}
+
+button {
+    font-family: 'Rajdhani-Medium';
+    font-size: 20px;
 }
 
 .content-2 h1 {
-    margin: 102px auto;
+    margin: 30px auto;
 }
+
+#fleche {
+    margin-bottom: 102px;
+}
+
+/* ---------- début de Bloc des images ----------- */
 
 .list-image {
-    background-color: rgb(108, 82, 148);
-    /* position: relative; */
+
     display: flex;
-    /* justify-content: space-around; */
-    /* margin: 20px; */
     align-items: center;
+    justify-content: space-between;
+    margin: 30px 0;
 }
 
-.image {
-    text-align: center;
+.list-image .image img {
+    max-width: 250px;
 }
 
-.list-image .image {
-    background-color: rgb(5, 56, 114);
-    margin: 15px;
+.list-image .image .titre-image {
+    margin-top: 12px;
+    margin-bottom: 5px;
+    font-family: 'Rajdhani-Medium';
+    font-size: 20px;
 }
 
-.bloc-3 {
-    background-image: url('../Assets/Illustrations/Bathome11.png');
-    height: 100%;
-}
 
-.bloc {
+
+/* ---------- fin de Bloc des images ----------- */
+
+/* ----------------- début de description ------------ */
+
+.nemesis {
     position: relative;
+    width: fit-content;
 }
+
+.nemesis i img {
+    top: 2px;
+    right: 2px;
+    width: 100px;
+    height: 100px;
+}
+
+.alilies {
+    display: flex;
+    background-color: rgb(77, 77, 105);
+    justify-content: space-between;
+}
+
+.alilies h1 {}
+
+/* ----------------- fin de description ------------ */
+
 
 .bloc-4 {
     background-color: rgb(14, 12, 10);
@@ -109,33 +228,8 @@ body {
     display: flex;
 }
 
-button {
-    padding: 20px 70px;
-    margin: 20px;
-    color: #FFFFFF;
-    text-transform: uppercase;
-    border: none;
-    background: -webkit-linear-gradient(to right, rgb(237, 222, 191, 0.4), rgb(137, 0, 8, 0.6));
-    background: linear-gradient(to right, rgb(237, 222, 191, 0.4), rgb(137, 0, 8, 0.6));
-    cursor: pointer;
-}
-
-button:hover {
-    font-weight: 700;
-}
 
 
-.header {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 102px;
-    margin-right: 102px;
-    padding: 132px 102px 20px;
-    border: 2px solid #6c6b6f92;
-    border-bottom: none;
-}
 
 /* 
 @media screen and (min-width: 600px),
